@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden; /* This cuts off any 'ghost' space on the right */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a; /* A deep professional dark mode */
+  color:#cecece;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-Serif;
+  text-align: center;
+  padding: 10px;
+}
+h1{
+  color: #ffffff; 
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-bottom: 2px solid platinum;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.5);
+  font-weight: 300;
+  margin-top: 50px;
+  font-style: italic;
+}
+ img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border: 5px solid #e5e4e2; /* A hold frame for art */
+  border-radius: 15px; /*Rounded corner for a modern feel */
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba (0,0,0,0.5); /* A shadow to make it pop */
+}
+img.hover{
+  transform: scale(1.05); /* Makes the img grow slightly */
+  box-shadow: 0 0 20px #e5e4e2; /* creates a golden glow */
+  transition: all 0.3 ease; /* makes the movement smooth as silk */
+  cursor: pointer;
+}
+.gallery-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 5%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+figcaption {
+  color: #e5e4e2;
+  font-family: serif;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 5px;
+}
+h2,p {
+  color: #e5e4e2;
+  text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.5);
+}
+figure {
+  margin: 0;
+  width: 45%;
+  min-width: 140px;
+}
+/* This replaces 'hover' for your phone screen */
+figure:active img {
+  transform: scale(1.1); /* The image grows when touched */
+  border-color: #9cd900; /* Changes to 'Agri-green' on touch */
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+figure {
+  transition: transform 0.2s ease;
+}
+nav {
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 2px;
+}
+.contact-card {
+  background: rgba(255, 255, 255, 0.05); /* Very subtle glass */
+  backdrop-filter: blur(10px); /* The "Glass" effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.glow-btn {
+  background: #9cd900; /* Your Agri-green */
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.glow-btn:hover {
+  box-shadow: 0 0 20px #9cd900; /* The "Panther-Eye" Glow */
+}
+input, textarea {
+  width: 100%; /* Makes them fill the card */
+  padding: 12px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box; /* Crucial for phone screens! */
+}
+
+/* Removes the orange glow when you click */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #9cd900;
+}
+.art-item {
+  position: relative; /* This is the "Anchor" */
+  display: inline-block;
+}
+.alpine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #0a0c0a; /* Deep dark forest background */
+    border-bottom: 1px solid rgba(139, 195, 74, 0.2); /* Faint green line */
+    font-family: 'Inter', sans-serif; /* Or any clean sans-serif you have */
+    font-style: Italic;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 5px;
+}
+
+.pulse-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #9cd900;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #8bc34a;
+    animation: pulse 2s infinite;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding-left: 5px;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+.alpine-header a{
+  color: #8bc34a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.brand-logo-img {
+    height: 40px; /* Adjust this to make it fit perfectly with your text */
+    width: auto;
+    margin-right: 0px;
+    position: relative;
+    left: 5px;
+    z-index: 1;
+    border: none;
+    padding-bottom: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+.brand-container {
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically centered */
+    gap: 10px; /* Space between logo and text */
+    text-transform: uppercase;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.brand-text-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks Alpine and Leaf vertically */
+    line-height: 1.1; /* Keeps the two lines close together */
+  font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem; /* Script usually needs to be a bit larger to be legible */
+}
+
+.brand-line {
+    font-weight: 400; /* You can now use a lighter, more elegant weight! */
+    font-size: 1.8rem; /* Adjust as needed */
+}
+
