@@ -29,12 +29,12 @@ h1{
 }
  img {
   width: 100%;
-  max-width: 150px;
+  max-width: 90%;
   height: auto;
-  border: 5px solid #e5e4e2; /* A hold frame for art */
-  border-radius: 15px; /*Rounded corner for a modern feel */
-  margin-top: 20px;
-  box-shadow: 0 5px 15px rgba (0,0,0,0.5); /* A shadow to make it pop */
+  border: 3px solid #e5e4e2; /* A hold frame for art */
+  border-radius: 12px; /*Rounded corner for a modern feel */
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba (0,0,0,0.6); /* A shadow to make it pop */
 }
 img.hover{
   transform: scale(1.05); /* Makes the img grow slightly */
@@ -98,12 +98,13 @@ nav {
 }
 
 .nav-links a {
-  color: #cecece;
+  color: #9cd900;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin: 2px;
+  font-weight: bold;
 }
 .contact-card {
   background: rgba(255, 255, 255, 0.05); /* Very subtle glass */
@@ -198,14 +199,14 @@ input:focus, textarea:focus {
   margin-left: 5px;
 }
 .brand-logo-img {
-    height: 40px; /* Adjust this to make it fit perfectly with your text */
+    height: 50px; /* Adjust this to make it fit perfectly with your text */
     width: auto;
-    margin-right: 0px;
+    margin: 0px;
     position: relative;
     left: 5px;
     z-index: 1;
     border: none;
-    padding-bottom: 10px;
+    padding: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
@@ -222,9 +223,9 @@ input:focus, textarea:focus {
 .brand-text-wrapper {
     display: flex;
     flex-direction: column; /* Stacks Alpine and Leaf vertically */
-    line-height: 1.1; /* Keeps the two lines close together */
+    line-height: 0.9; /* Keeps the two lines close together */
   font-family: 'Great Vibes', cursive;
-    font-size: 2.2rem; /* Script usually needs to be a bit larger to be legible */
+    font-size: 1.8rem; /* Script usually needs to be a bit larger to be legible */
 }
 
 .brand-line {
