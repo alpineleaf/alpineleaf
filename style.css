@@ -28,8 +28,9 @@ h1{
   font-style: italic;
 }
 h2 {
-  font-size: 1.8rem;
-  margin-top: 30px;
+  font-size: 2.2rem;
+  margin-top: 40px;
+  letter-spacing: 2px;
 }
  img {
   width: 100%;
@@ -159,7 +160,7 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 25px 20px;
     background: #0a0c0a; /* Deep dark forest background */
     border-bottom: 1px solid rgba(139, 195, 74, 0.2); /* Faint green line */
     font-family: 'Inter', sans-serif; /* Or any clean sans-serif you have */
@@ -167,7 +168,7 @@ input:focus, textarea:focus {
     position: sticky;
     top: 0;
     z-index: 100;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 
@@ -205,7 +206,7 @@ input:focus, textarea:focus {
   margin-left: 5px;
 }
 .brand-logo-img {
-    height: 60px; /* Adjust this to make it fit perfectly with your text */
+    height: 70px; /* Adjust this to make it fit perfectly with your text */
     width: auto;
     margin: 0px;
     position: relative;
@@ -229,9 +230,9 @@ input:focus, textarea:focus {
 .brand-text-wrapper {
     display: flex;
     flex-direction: column; /* Stacks Alpine and Leaf vertically */
-    line-height: 0.9; /* Keeps the two lines close together */
+    line-height: 0.8; /* Keeps the two lines close together */
   font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem; /* Script usually needs to be a bit larger to be legible */
+    font-size: 2.8rem; /* Script usually needs to be a bit larger to be legible */
 }
 
 .brand-line {
@@ -239,8 +240,9 @@ input:focus, textarea:focus {
     font-size: 1.8rem; /* Adjust as needed */
 }
 p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  line-height: 1.8;
   padding: 0 10px;
+  margin: 20px auto;
 }
 
