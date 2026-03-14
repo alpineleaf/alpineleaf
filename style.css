@@ -62,7 +62,7 @@ img.hover{
 }
 figcaption {
   color: #e5e4e2;
-  font-family: serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 1.8rem;
   margin-top: 10px;
   font-style: italic;
@@ -91,26 +91,10 @@ figure:active img {
 figure {
   transition: transform 0.2s ease;
 }
-nav {
-  flex-shrink: 0;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-}
 
 .nav-links a {
-  color: #9cd900;
-  text-decoration: none;
-  font-size: 1.1rem;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
   margin: 2px;
-  font-weight: bold;
 }
 .contact-card {
   background: rgba(255, 255, 255, 0.05); /* Very subtle glass */
@@ -160,7 +144,7 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 20px;
+    padding: 10px 10px;
     background: #0a0c0a; /* Deep dark forest background */
     border-bottom: 1px solid rgba(139, 195, 74, 0.2); /* Faint green line */
     font-family: 'Inter', sans-serif; /* Or any clean sans-serif you have */
@@ -188,7 +172,7 @@ input:focus, textarea:focus {
     border-radius: 50%;
     box-shadow: 0 0 8px #8bc34a;
     animation: pulse 2s infinite;
-    margin-left: 10px;
+    margin-left: 2px;
     margin-right: 2px;
     padding-left: 5px;
 }
@@ -199,18 +183,22 @@ input:focus, textarea:focus {
     100% { opacity: 1; }
 }
 .alpine-header a{
-  color: #8bc34a;
+  color: #9cd900;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   margin-left: 5px;
+  font-weight: bold;
+  gap: 10px;
+  flex-shrink: 0;
+  list-style: none;
+  padding: 0;
 }
 .brand-logo-img {
     height: 70px; /* Adjust this to make it fit perfectly with your text */
     width: auto;
     margin: 0px;
     position: relative;
-    left: 5px;
     z-index: 1;
     border: none;
     padding-bottom: 0;
@@ -223,7 +211,7 @@ input:focus, textarea:focus {
     align-items: center; /* Aligns logo and text vertically centered */
     gap: 10px; /* Space between logo and text */
     text-transform: uppercase;
-    margin-right: 30px;
+    margin-right: 10px;
     padding: 5px;
 }
 
@@ -237,12 +225,13 @@ input:focus, textarea:focus {
 
 .brand-line {
     font-weight: 400; /* You can now use a lighter, more elegant weight! */
-    font-size: 1.8rem; /* Adjust as needed */
+    font-size: clamp(2.8rem, 5vw, 5.6rem); /* Adjust as needed */
 }
 p {
   font-size: 2.2rem;
   line-height: 1.8;
   padding: 0 10px;
+  max-width: 90%;
   margin: 20px auto;
 }
 
