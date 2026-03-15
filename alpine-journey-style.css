@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.season-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1.5s ease-in-out; /* This makes the season change smooth! */
+    scroll-snap-align: start;
+}
+
+.winter { background-image: url('winter-pine.jpg'); }
+.spring { background-image: url('spring-meadow.jpg'); }
+.autumn { background-image: url('autumn-meadow.jpg'); }
+.river { background-image: url('glacial-flow.jpg'); }
+/* Adding a subtle hover effect to make it feel 'alive' */
+.season-container:hover {
+    filter: brightness(1.1); /* Slight glow when the user explores */
+}
+.alpine-journey {
+    height: 100vh;
+    overflow-y: scroll;
+    /* This makes the sections 'snap' into view as the user swipes */
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;
+}
+p, h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #cecece;
+  padding: 0 20px;
+  overflow-wrap: break-word;
+}
+/*img {
+ /* max-width: 100%;*/
+  display: block;
+  height: auto;
+} */
+
+

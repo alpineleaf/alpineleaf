@@ -234,4 +234,26 @@ p {
   max-width: 90%;
   margin: 20px auto;
 }
+/* This makes the navigation items sit side-by-side */
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Pushes menu to the right */
+    gap: 20px;
+    align-items: center;
+}
+
+/* This styles your nested project menu */
+.project-menu {
+    display: flex;
+    gap: 15px;
+    /* Optional: Hide it until hover, or just style it as a simple list */
+}
+
+/* Ensure the links don't stretch */
+.nav-links a {
+    text-decoration: none;
+    color: #a3d9a5; /* Adjust to your brand green */
+    white-space: nowrap; /* Keeps text from breaking onto two lines */
+}
+
 
