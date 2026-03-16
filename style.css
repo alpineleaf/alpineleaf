@@ -143,9 +143,11 @@ input:focus, textarea:focus {
 }
 .alpine-header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 10px 10px;
+    padding: 15px;
+    gap: 10px;
     background: #0a0c0a; /* Deep dark forest background */
     border-bottom: 1px solid rgba(139, 195, 74, 0.2); /* Faint green line */
     font-family: 'Inter', sans-serif; /* Or any clean sans-serif you have */
@@ -234,13 +236,6 @@ p {
   max-width: 90%;
   margin: 20px auto;
 }
-/* This makes the navigation items sit side-by-side */
-.nav-links {
-    display: flex;
-    justify-content: flex-end; /* Pushes menu to the right */
-    gap: 20px;
-    align-items: center;
-}
 
 /* This styles your nested project menu */
 .project-menu {
@@ -255,5 +250,35 @@ p {
     color: #a3d9a5; /* Adjust to your brand green */
     white-space: nowrap; /* Keeps text from breaking onto two lines */
 }
+/* Only affects screens smaller than 768px */
+@media (max-width: 768px) {
+  .alpine-header {
+    flex-direction: column; /* Stacks brand above the links */
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .brand-container {
+    margin-bottom: 15px; /* Adds space before the menu */
+  }
+
+  .nav-links {
+    flex-wrap: wrap; /* Lets links go to a second line if needed */
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    /*align-items: center;*/
+    width: 100%;
+  }
+  
+  .brand-line {
+    font-size: 2rem; /* Shrinks the text slightly for mobile */
+}
+@media (max-width: 600px) {
+  .brand-line {
+    font-size: 2.2rem;
+  }
+}
+
 
 
