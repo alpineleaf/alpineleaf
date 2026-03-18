@@ -1,55 +1,133 @@
-/* Add these to your new project stylesheet */
+/* Base Reset and Fonts */
+body {
+    background-color: #fcf9f2; /* Parchment Color */
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Header Styling */
+.archive-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(252, 249, 242, 0.8), rgba(252, 249, 242, 0.8)), url('forest-bg.jpg');
+    background-size: cover;
+}
+
 .archive-title {
     font-family: 'Great Vibes', cursive;
-    color: #d4af37; /* Metallic Gold */
+    color: #d4af37; /* Gold Accent */
     font-size: 4rem;
+    margin: 0;
 }
 
-/*.friend-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #8bc34a;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
-    transition: transform 0.3s ease;
-} */
-
-.friend-card:hover {
-    transform: translateY(-10px);
-    border-color: #d4af37;
+.hero-subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
 }
-/* Styling for the Character Cards */
+
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* Coordinate Grid System */
 .character-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 40px 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Character Cards */
 .friend-card {
     width: 280px;
-    background: #fdfaf1; /* A soft parchment paper color */
-    border: 2px solid #8bc34a;
+    background: #ffffff;
+    border: 2px solid #8bc34a; /* Sage Green */
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 10px 10px 0px #d4af37; /* A 'Gold' offset shadow for a book feel */
-    color: #333; /* Darker text for readability on light parchment */
-   transition: transform 0.3s ease;
+    box-shadow: 8px 8px 0px #d4af37; /* Gold Offset Shadow */
+    transition: transform 0.3s ease;
+}
+
+.friend-card:hover {
+    transform: translateY(-5px);
 }
 
 .friend-card img {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #1a1a1a;
+    border: 1px solid #ddd;
     margin-bottom: 15px;
+}
+
+.friend-card h3 {
+    margin: 10px 0 5px;
+    color: #2e4a1d;
 }
 
 .role {
     font-style: italic;
-    color: #555;
+    color: #777;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* The Interactive Reveal Logic (Zero JavaScript) */
+.friend-toggle {
+    display: none;
+}
+
+.extra-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-top: 0px solid transparent;
+}
+
+.friend-toggle:checked ~ .extra-description {
+    max-height: 300px; /* Expands to show text */
+    padding-top: 15px;
+    border-top: 1px dashed #d4af37;
+    margin-top: 10px;
+}
+
+.friend-card label {
+    cursor: pointer;
     display: block;
 }
+
+/* Footer Link */
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #d4af37;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-link:hover {
+    background: #d4af37;
+    color: white;
+}
+
+    
+
+
 
