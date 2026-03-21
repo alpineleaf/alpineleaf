@@ -1,3 +1,4 @@
+
 /* Base Reset and Fonts */
 body {
     background-color: #fcf9f2; /* Parchment Color */
@@ -40,8 +41,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -55,7 +56,7 @@ body {
     padding: 20px;
     box-shadow: 8px 8px 0px #d4af37; /* Gold Offset Shadow */
     transition: transform 0.3s ease;
-}
+}    
 
 .friend-card:hover {
     transform: translateY(-5px);
@@ -86,7 +87,8 @@ body {
 }
 
 .extra-description {
-    max-height: 0;
+    height: auto;
+    display: none;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     font-size: 0.95rem;
@@ -95,10 +97,13 @@ body {
 }
 
 .friend-toggle:checked ~ .extra-description {
-    max-height: 300px; /* Expands to show text */
     padding-top: 15px;
     border-top: 1px dashed #d4af37;
     margin-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .friend-card label {
@@ -126,6 +131,7 @@ footer {
     background: #d4af37;
     color: white;
 }
+
 
     
 
