@@ -1,0 +1,52 @@
+/* Storybook Palette & Layout */
+body { 
+    background-color: #fdf6e3; 
+    color: #5d4037; 
+    font-family: 'Georgia', serif; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 50px 20px;
+    background-color: #f5ead2;
+    border-bottom: 2px solid #e0d7c6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8d6e63;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+    padding: 40px; 
+}
+
+.bird-card { 
+    background: #ffffff; 
+    border-radius: 20px; 
+    padding: 20px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid #e0d7c6;
+    transition: transform 0.3s ease;
+}
+
+.bird-card:hover {
+    transform: translateY(-10px); /* Makes the card "float" when you touch it */
+}
+
+img { 
+    width: 100%; 
+    border-radius: 15px; 
+}
+
+h3 {
+    color: #795548;
+    margin-top: 15px;
+}
