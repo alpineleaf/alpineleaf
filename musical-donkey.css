@@ -139,7 +139,7 @@ input[type="radio"] {
 }
 @media (min-width: 1024px) {
     .page {
-        flex-direction: row; /* Side-by-side layout for Desktop */
+        flex-direction: column; /* Side-by-side layout for Desktop */
         align-items: center;
     }
     .page img {
@@ -150,6 +150,5 @@ input[type="radio"] {
         width: 50%;
         height: 100%;
         padding: 40px;
-        flex-direction: column;
     }
 }
