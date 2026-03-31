@@ -150,5 +150,6 @@ input[type="radio"] {
         width: 50%;
         height: 100%;
         padding: 40px;
+        flex-direction: column;
     }
 }
