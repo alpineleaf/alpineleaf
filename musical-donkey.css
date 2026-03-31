@@ -147,7 +147,7 @@ input[type="radio"] {
     }
     .page {
         width: 95vw; /* Matches the max-width of your viewport */
-        max-width: 600px;
+        max-width: 850px;
         flex-direction: row; /* Puts image and text next to each other */
     }
 
@@ -155,14 +155,14 @@ input[type="radio"] {
         width: 50%;
         height: 100%;
         object-fit: contain; /* Shows the WHOLE watercolor painting */
-        padding: 20px;
+        padding: 10px;
     }
 
     .story-text {
         width: 50%;
         height: 100%;
         font-size: 1.2rem;
-        padding: 40px;
+        padding: 20px;
         text-align: left; /* More like a traditional book */
     }
 
