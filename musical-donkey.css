@@ -140,12 +140,13 @@ input[type="radio"] {
 /* 2. Fix the Side-by-Side Layout */
 @media (min-width: 1024px) {
     .filmstrip {
-        width: 475px; /* Needs to be wide enough for all pages side-by-side */
+        width: 4500px; /* Needs to be wide enough for all pages side-by-side */
     }
 
     .page {
         width: 95vw; /* Matches the max-width of your viewport */
-        flex-direction: column; /* Puts image and text next to each other */
+        max-width: 900px;
+        flex-direction: row; /* Puts image and text next to each other */
     }
 
     .page img {
