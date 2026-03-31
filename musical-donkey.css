@@ -24,8 +24,9 @@ body {
 
 .book-viewport {
     width: 80vw;
-    height: 60vh;
-    margin: 20px auto;
+    max-width: 800px;
+    height: 80vh;
+    margin: 40px auto;
     border: 15px solid white;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     position: relative;
@@ -51,8 +52,9 @@ body {
 
 .page img {
     width: 100%;
-    height: 65%;
-    object-fit: cover; /* Makes your beautiful watercolors fill the screen */
+    height: 60%;
+    object-fit: contain; /* This stops the 'Zooming/Cropping' and shows the whole painting */
+    background-color: #fff;
 }
 
 /* THE CLICK LOGIC */
@@ -134,4 +136,19 @@ input[type="radio"] {
     height: auto;
     margin-bottom: 10px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+@media (min-width: 1024px) {
+    .page {
+        flex-direction: row; /* Side-by-side layout for Desktop */
+        align-items: center;
+    }
+    .page img {
+        width: 50%;
+        height: 100%;
+    }
+    .story-text {
+        width: 50%;
+        height: 100%;
+        padding: 40px;
+    }
 }
