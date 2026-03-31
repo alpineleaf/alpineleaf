@@ -73,11 +73,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   padding: 40px 5%;
 }
 
-figure { width: 45%; min-width: 280px; margin: 0; }
+figure { width: 30%; min-width: 280px; max-width: 400px; margin: 0; }
 img { width: 100%; border-radius: 12px; border: 3px solid #e5e4e2; transition: 0.3s; }
 img:hover { transform: scale(1.03); box-shadow: 0 0 15px #9cd900; }
 
@@ -86,8 +86,8 @@ img:hover { transform: scale(1.03); box-shadow: 0 0 15px #9cd900; }
   .alpine-header { flex-direction: column; padding: 10px; }
   .brand-line { font-size: 2rem; }
   .nav-links { margin-top: 10px; flex-wrap: wrap; justify-content: center; }
-  h1 { font-size: 1.5rem; margin-top: 20px; }
-  figure { width: 90%; }
+  h1 { font-size: 1.6rem; margin-top: 20px; }
+  figure { width: 90%; max-width: none; }
 }
 .contact-card {
   background: rgba(255, 255, 255, 0.05); /* Very subtle glass */

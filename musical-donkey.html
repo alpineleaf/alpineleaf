@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Musical Donkey | Alpine Meadow Tales</title>
+    <!-- Your new Alpine Pinecone Logo as the Favicon -->
+    <link rel="icon" type="image/png" href="pinecone-logo.png"> 
+    <link rel="stylesheet" href="musical-donkey.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        
+        <header class="site-header">
+            <!-- Adding the logo next to the title for that studio feel -->
+            <img src="pinecone-logo.png" alt="Alpine Leaf Logo" class="header-logo">
+            <h1 class="storybook-title">Alpine Meadow Tales</h1>
+            <nav class="fairytale-nav">
+                <a href="#">Garden</a>
+                <a href="#">Library</a>
+                <a href="#">Letters</a>
+            </nav>
+        </header> 
+
+        <main class="content-area">
+            <div class="book-viewport">
+                <!-- Navigation Controllers -->
+                <input type="radio" name="page" id="p1" checked>
+                <input type="radio" name="page" id="p2">
+                <input type="radio" name="page" id="p3">
+                <input type="radio" name="page" id="p4">
+                <input type="radio" name="page" id="p5">
+
+                <div class="filmstrip">
+                    <!-- Page 1: The Cover -->
+                    <section class="page" id="page1">
+                        <img src="meadow-cover.jpg" alt="The Meadow">
+                        <div class="story-text">Welcome to the Meadow...</div>
+                        <label for="p2" class="hotspot start-btn">Open the Story</label>
+                    </section>
+
+                    <!-- Page 2: Beppo Appears -->
+                    <section class="page" id="page2">
+                        <img src="beppo-intro.jpg" alt="Beppo the Donkey">
+                        <div class="story-text">Once there was a donkey named Beppo. One day, Beppo found a meadow so full of sweet grass and bright flowers that his heart began to swell with a secret song.</div>
+                        <label for="p3" class="hotspot next-btn">Next</label>
+                    </section>
+                    <section class="page" id="page3">
+    <img src="grasshoppers-fiddles.jpg" alt="Grasshoppers with Fiddles">
+    <div class="story-text">🎶 Suddenly, a tiny "crick-crick" rose from the clover. Three green grasshoppers appeared, tuning their golden fiddles to match the rhythm of Beppo’s happy heart.</div>
+    <label for="p4" class="hotspot next-btn">Next</label>
+</section>
+    <section class="page" id="page4">
+    <img src="beppo-singing.jpg" alt="Beppo Singing with Friends">
+    <div class="story-text">🎶 Beppo tilted his head back and let out a soft, musical bray. The wind whistled through the pines, and together, they played the most beautiful song the Alps had ever heard.</div>
+    <label for="p5" class="hotspot next-btn">Next</label>
+</section>
+    <section class="page" id="page5">
+    <img src="beppo-sleeping.jpg" alt="Beppo Sleeping at Sunset">
+    <div class="story-text">As the sun dipped behind the peaks, the meadow fell into a golden hush. Beppo closed his eyes, dreaming of tomorrow’s encore. The end.</div>
+    <a href="#" class="hotspot start-btn">Back to Library</a>
+</section>
+
+                </div>
+            </div>
+
+            <aside class="story-info">
+                <h2>The Musical Donkey</h2>
+                <p>A tale of a quiet donkey and his hidden symphony.</p>
+            </aside>
+        </main> <!-- The extra </div> was here! I removed it. -->
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Alpine Leaf Studio. All Rights Reserved.</p>
+        </footer>
+    </div> <!-- This is the correct closing tag for site-wrapper -->
+</body>
+</html>
