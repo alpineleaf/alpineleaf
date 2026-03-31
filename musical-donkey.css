@@ -137,18 +137,35 @@ input[type="radio"] {
     margin-bottom: 10px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
+/* 2. Fix the Side-by-Side Layout */
 @media (min-width: 1024px) {
-    .page {
-        flex-direction: column; /* Side-by-side layout for Desktop */
-        align-items: center;
+    .filmstrip {
+        width: 4500px; /* Needs to be wide enough for all pages side-by-side */
     }
+
+    .page {
+        width: 900px; /* Matches the max-width of your viewport */
+        flex-direction: row; /* Puts image and text next to each other */
+    }
+
     .page img {
         width: 50%;
         height: 100%;
+        object-fit: contain; /* Shows the WHOLE watercolor painting */
+        padding: 20px;
     }
+
     .story-text {
         width: 50%;
         height: 100%;
+        font-size: 1.2rem;
         padding: 40px;
+        text-align: left; /* More like a traditional book */
+    }
+
+    /* Adjust the "Next" button for desktop */
+    .hotspot {
+        top: 80%;
+        left: 75%; /* Moves it under the text side */
     }
 }
