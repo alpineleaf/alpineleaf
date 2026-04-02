@@ -167,12 +167,14 @@ footer {
     word-wrap: break-word; /* Prevents long words from breaking the frame */
     margin-bottom: 15px;
 }
+}
 /* 3. The Responsive Gate (The Final Polish) */
 @media (max-width: 600px) {
     .extra-description {
         padding: 15px; /* Thinner padding for smaller screens */
         font-size: 0.9rem; /* Slightly smaller text to fit the narrative */
     }
+}
 
    /* 1. Prevent the overlay from 'fighting' with the cards */
 .extra-description {
