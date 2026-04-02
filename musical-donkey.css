@@ -137,39 +137,47 @@ input[type="radio"] {
     margin-bottom: 10px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
-/* 2. Fix the Side-by-Side Layout */
+/* --- 2. DESKTOP OVERRIDE (The Lair-Free Zone) --- */
 @media (min-width: 1024px) {
+      .book-viewport {
+        width: 900px; /* Lock the width to a fixed size for desktop */
+        height: 550px; /* A comfortable landscape height */
+    }
+
     .filmstrip {
-        width: 450vw; /* Needs to be wide enough for all pages side-by-side */
+        width: 4500px; /* 5 pages x 900px = 4500px */
     }
-    .book-viewport {
-      width: 90vw;
-      max-width: 800px;
-    }
+
     .page {
-        width: 90vw; /* Matches the max-width of your viewport */
-        max-width: 800px;
-        flex-direction: row; /* Puts image and text next to each other */
+        width: 900px; /* Each page is now 900px wide */
+        flex-direction: row; /* Image on left, text on right */
+        align-items: center;
     }
 
     .page img {
         width: 50%;
         height: 100%;
-        object-fit: contain; /* Shows the WHOLE watercolor painting */
-        padding: 10px;
+        object-fit: contain;
+        padding: 20px;
     }
 
     .story-text {
         width: 50%;
         height: 100%;
         font-size: 1.2rem;
-        padding: 20px;
-        text-align: left; /* More like a traditional book */
+        padding: 40px;
+        text-align: left;
     }
 
-    /* Adjust the "Next" button for desktop */
+    /* FIXING THE SLIDE MATH FOR DESKTOP */
+    #p2:checked ~ .filmstrip { transform: translateX(-900px); }
+    #p3:checked ~ .filmstrip { transform: translateX(-1800px); }
+    #p4:checked ~ .filmstrip { transform: translateX(-2700px); }
+    #p5:checked ~ .filmstrip { transform: translateX(-3600px); }
+
     .hotspot {
         top: 80%;
-        left: 75%; /* Moves it under the text side */
+        left: 75%; /* Positions 'Next' on the text side */
     }
 }
+ 
