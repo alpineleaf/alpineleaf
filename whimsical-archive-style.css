@@ -174,7 +174,24 @@ footer {
         font-size: 0.9rem; /* Slightly smaller text to fit the narrative */
     }
 
-    
+   /* 1. Prevent the overlay from 'fighting' with the cards */
+.extra-description {
+    pointer-events: auto; /* Ensures the close button still works */
+    display: none;        /* Keep as is */
+}
+
+/* 2. Create a 'Wall' so the cards underneath can't be hovered while open */
+.friend-toggle:checked + .extra-description {
+    display: flex;
+    position: fixed; 
+    z-index: 9999; /* Higher than anything else */
+}
+
+/* 3. Disable hover effects on cards when the archive is 'busy' with an overlay */
+.character-grid:has(.friend-toggle:checked) .friend-card:hover {
+    transform: none; /* Stops the card from jumping while the text is open */
+}
+ 
 
 
 
