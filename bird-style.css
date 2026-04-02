@@ -50,3 +50,15 @@ h3 {
     color: #795548;
     margin-top: 15px;
 }
+.panther-badge {
+    width: 50px;
+    height: auto;
+    filter: grayscale(100%) opacity(0.8); /* Minimalist look */
+    border-radius: 50%;
+    border: 1px solid #d1c7b7; /* Soft parchment border */
+    transition: filter 0.3s ease;
+}
+
+.panther-badge:hover {
+    filter: grayscale(0%); /* Subtle reveal on hover */
+}
