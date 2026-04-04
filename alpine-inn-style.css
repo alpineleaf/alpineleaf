@@ -179,4 +179,16 @@ footer a {
     transform: scale(1.02); /* A tiny "Dragon's Breath" movement */
 }
 
+/* 2. Desktop-Only Enhancements (The Fix) */
+@media (min-width: 1024px) {
+    .image-grid {
+        grid-template-columns: 1fr 1fr; /* Side-by-side for desktop */
+        gap: 40px; /* More breathing room on big screens */
+        max-width: 1200px; /* Prevents the container from getting too wide */
+        margin: 0 auto; /* Centers the whole container */
+    }
 
+    .image-grid img {
+        height: 450px; /* Taller, more elegant images for desktop */
+    }
+}
